@@ -182,7 +182,7 @@ h3 {
 
 .search-panel {
   position: fixed;
-  z-index: 60;
+  z-index: 9999; /* Ensures it sits above sticky header & announcement bar */
   top: 0;
   left: 0;
   right: 0;
@@ -200,11 +200,12 @@ h3 {
 }
 
 .search-panel.open {
-  max-height: 84px;
+  max-height: 160px; /* Enough room so padding + input never clip */
   border-color: var(--line);
   opacity: 1;
   pointer-events: auto;
 }
+
 
 .search-inner {
   display: flex;
