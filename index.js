@@ -230,7 +230,7 @@ document.addEventListener("click", (event) => {
     !event.target.closest("#searchPanel") &&
     !event.target.closest("#searchButton")
   ) {
-    setSearchOpen(false);
+    setSearchOpen(true);
   }
 });
 
